@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3e6f7;
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 245, 245);
+  align-items: center;
+  padding: 20px;
+  width: 500px;
+  height: 420px;
+  margin-top: -200px;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 69px;
+}
+
+#img-background-desktop {
+  max-width: 100%;
+  height: auto;
+}
+
+.duvidas {
+  align-items: center;
+  gap: 64px;
+  padding: 20px;
+  line-height: 150%;
+  position: relative;
+  overflow: hidden;
+}
+#faq-introducao {
+  display: flex;
+  align-self: flex-start;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  display: flex;
+  cursor: pointer;
+  background-color: #f5e9f8;
+  border-radius: 10px;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 8px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.duvidas p {
+  margin-top: -8px;
+  padding: 0 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.duvidas.ativas p {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
+}
+
+.duvidas .img-minimus {
+  display: none;
+}
+
+.duvidas.ativas .img-mais {
+  display: none;
+}
+
+.duvidas.ativas .img-minimus {
+  display: inline-block;
+}
+/* Estilos para telas menores que 767 pixels */
+@media screen and (max-width: 767px) {
+  #faq {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 245, 245);
+    align-items: center;
+    padding: 20px;
+    width: 580px;
+    height: 420px;
+    margin-top: -150px;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 100px;
+  }
+}
